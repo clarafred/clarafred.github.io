@@ -1,5 +1,12 @@
-.indexpic {
+img {
     border: 2px solid black;
     display: block;
     margin: 50px auto 20px auto;
+}
+.textbox a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+.textbox a:hover {
+    color: white;
 }

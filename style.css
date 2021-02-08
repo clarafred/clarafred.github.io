@@ -1,27 +1,66 @@
 body {
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(160, 160, 160);
     font-family: Times;
 }
-.topnav {
+header {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.topnav a {
+header div {
+    font-family: monospace;
+    display: inline;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+header a {
     font-family: monospace;
     text-decoration: none;
     text-align: center;
-    color:rgb(173, 173, 173);
+    color:rgb(160, 160, 160);
     border: 2px solid black;
     background-color: black;
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
 }
-.topnav a:hover {
+header a:hover {
     color: black;
-    background-color: rgb(173, 173, 173);
     border: 2px solid black;
+    background-color: rgb(160, 160, 160);
 }
 footer {
-    color:dimgrey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer a {
+    font-family: monospace;
+    text-decoration: none;
+    color:rgb(66, 66, 66);
+    padding: 10px;
+}
+footer a:hover{
+    color: white;
+}
+h1 {
+    font-family: monospace;
     text-align: center;
+    padding: 30px;
+}
+h2 {
+    font-family: monospace;
+    text-align: center;
+    padding: 10px;
+}
+.textbox {
+    border: 1px solid rgb(66, 66, 66);
+    display: block;
+    padding: 10px 30px 30px 30px;
+    width: 500px;
+    margin: 10px auto;
+}
+.published {
+    font-family: monospace;
+    font-size: smaller;
 }
