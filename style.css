@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(173, 173, 173);
+    font-family: Times;
+}
+.topnav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.topnav a {
+    font-family: monospace;
+    text-decoration: none;
+    text-align: center;
+    color:rgb(173, 173, 173);
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+.topnav a:hover {
+    color: black;
+    background-color: rgb(173, 173, 173);
+    border: 2px solid black;
+}
+footer {
+    color:dimgrey;
+    text-align: center;
+}
