@@ -1,68 +1,113 @@
 body {
     background-color: rgb(160, 160, 160);
-    font-family: Times;
+    font-family: monospace;
 }
 header {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /*box-shadow:0px 0px 0px 2px black inset;*/
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: row;
 }
-header div {
-    display: inline;
-    font-family: monospace;
+.blogname {
+    text-align: left;
+    flex: 20%;
+}
+figure {
+    display: inline-block;
+    border: 0.125rem solid black;
+    width: 6rem;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    font-size: 0.7rem;
     text-align: center;
-    color: black;
-    border: 2px solid black;
-    margin: 10px;
-    padding: 10px;
+}
+nav {
+    display: inline;
+    text-align: center;
+    flex: 80%;
 }
 header a {
+    font-size: 0.7rem;
     text-decoration: none;
-    font-family: monospace;
     text-align: center;
     color:rgb(160, 160, 160);
-    border: 2px solid black;
+    border: 0.125rem solid black;
     background-color: black;
-    margin: 10px;
-    padding: 10px;
+    display: inline-block;
+    width: 6rem;
+    clear: left;
+    margin: 0.6rem;
+    padding: 0.6rem;
 }
 header a:hover {
     color: black;
-    border: 2px solid black;
+    border: 0.125rem solid black;
     background-color: rgb(160, 160, 160);
 }
 footer {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
     position: fixed;
+    position: flex;
     bottom: 0;
 }
 footer a {
-    font-family: monospace;
     text-decoration: none;
     color:rgb(66, 66, 66);
-    padding: 10px;
+    padding: 0.6rem;
 }
 footer a:hover{
     color: white;
 }
 h1 {
-    font-family: monospace;
     text-align: center;
-    padding: 30px;
-}
-h2 {
-    font-family: monospace;
-    text-align: center;
-    padding: 10px;
+    padding: 1.8rem;
 }
 .textbox {
-    border: 1px solid rgb(66, 66, 66);
+    font-family: Times;
+    border: 0.125rem solid rgb(66, 66, 66);
     display: block;
-    padding: 10px 30px 30px 30px;
-    width: 500px;
-    margin: 10px auto 30px auto;
+    padding: 0.6rem 1.8rem 1.8rem 1.8rem;
+    margin: 0.6rem auto 2rem auto;
+}
+.textbox h2 {
+    font-family: monospace;
+    text-align: center;
+    padding: 0.6rem;
 }
 .published {
     font-family: monospace;
-    font-size: smaller;
+    font-size: 0.8rem;
+}
+@media screen and (min-width: 980px) /* Desktop */ {
+    .textbox {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 979px) /* Tablet */ {
+    nav {
+        text-align: right;
+    }
+    .textbox {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) /* Mobile */ {
+    header {
+        flex-direction: column;
+    }
+    .blogname {
+        text-align: center;
+    }
+    figure {
+        width: 10rem;
+        font-size: 1rem;
+    }
+    nav {
+        text-align: center;
+    }
+    .textbox {
+        width: 75%;
+    }
 }
