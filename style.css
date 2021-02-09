@@ -7,8 +7,8 @@ header {
     margin-bottom: 30px;
 }
 header div {
-    font-family: monospace;
     display: inline;
+    font-family: monospace;
     text-align: center;
     color: black;
     border: 2px solid black;
@@ -16,8 +16,8 @@ header div {
     padding: 10px;
 }
 header a {
-    font-family: monospace;
     text-decoration: none;
+    font-family: monospace;
     text-align: center;
     color:rgb(160, 160, 160);
     border: 2px solid black;
@@ -32,7 +32,9 @@ header a:hover {
 }
 footer {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 0;
 }
 footer a {
     font-family: monospace;
@@ -58,7 +60,7 @@ h2 {
     display: block;
     padding: 10px 30px 30px 30px;
     width: 500px;
-    margin: 10px auto;
+    margin: 10px auto 30px auto;
 }
 .published {
     font-family: monospace;

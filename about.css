@@ -1,19 +1,15 @@
 div {
-    width: 500px;
+    border: 1px solid rgb(66, 66, 66);
     margin: 0 auto;
+    text-align: center;
 }
 img {
     border-radius: 50%;
-    position: relative;
-    right: 130px;
-    bottom: 370px;
 }
 article {
-    display: block;
-    padding: 10px 30px 30px 30px;
-    width: 400px;
-    margin: 10 auto;
     border: 1px solid rgb(66, 66, 66);
-    position: relative;
-    left: 100px;
+    display: inline-block;
+    padding: 10px 30px 30px 30px;
+    width: 500px;
+    margin: 10 auto;
 }
