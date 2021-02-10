@@ -36,7 +36,7 @@ header a {
     background-color: black;
     display: inline-block;
     width: 6rem;
-    clear: left;
+    /*clear: left;*/
     margin: 0.6rem;
     padding: 0.6rem;
 }
@@ -51,6 +51,7 @@ footer {
     position: fixed;
     position: flex;
     bottom: 0;
+    font-size: 0.7rem;
 }
 footer a {
     text-decoration: none;
@@ -86,9 +87,17 @@ h1 {
     }
 }
 @media screen and (max-width: 979px) /* Tablet */ {
+    /*figure {
+        width: 8rem;
+        font-size: 1rem;
+    }*/
     nav {
         text-align: right;
     }
+    /*header a {
+        width: 8rem;
+        font-size: 1rem;
+    }*/
     .textbox {
         width: 50%;
     }
@@ -107,6 +116,10 @@ h1 {
     nav {
         text-align: center;
     }
+    /*header a {
+        font-size: 0.7rem;
+        width: 6rem;
+    }*/
     .textbox {
         width: 75%;
     }
