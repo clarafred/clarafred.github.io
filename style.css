@@ -77,10 +77,10 @@ h1 {
     font-family: monospace;
     font-size: 0.8rem;
 }
-@media screen and (min-width: 980px) /* Desktop */ {
+@media screen and (min-width: 770px) /* Desktop */ {
     nav {
         position: relative;
-        bottom: 3.5rem;
+        bottom: 3.552rem;
     }
     .textbox {
         width: 25%;
@@ -97,7 +97,7 @@ h1 {
     nav {
         text-align: right;
         position: relative;
-        bottom: 3.5rem;
+        bottom: 3.552rem;
     }
     .textbox {
         width: 50%;
@@ -124,12 +124,13 @@ h1 {
     header a {
         font-size: 0.7rem;
         width: 3.5rem;
+        margin: 0.2rem;
+        padding: 0.5rem;
     }
     .textbox {
         width: 75%;
     }
     footer {
         display: none;
-        /*position:flex;*/
     }
 }

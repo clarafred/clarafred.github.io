@@ -3,7 +3,7 @@ section {
     flex-direction: row;
 }
 .imagebox {
-    flex: 50%;
+    flex: 35%;
     text-align: right;
 }
 img {
@@ -11,12 +11,9 @@ img {
     max-width: 75%;
     border: 0.07rem solid rgb(66, 66, 66);
     margin: 0 auto;
-    /*position: relative;
-    right: 30px;
-    bottom: 79px;*/
 }
 .paragraphbox {
-    flex: 50%;
+    flex: 65%;
 }
 p {
     font-family: Times;
@@ -44,5 +41,8 @@ p {
 @media screen and (max-width: 361px) /* Mobile */ {
     p {
         width: 75%;
+    }
+    img {
+        width: 10rem;
     }
 }
