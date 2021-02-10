@@ -3,11 +3,10 @@ body {
     font-family: monospace;
 }
 header {
-    /*box-shadow:0px 0px 0px 2px black inset;*/
+    display: flex;
     margin-top: 1.8rem;
     margin-bottom: 1.8rem;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .blogname {
     text-align: left;
@@ -16,10 +15,10 @@ header {
 figure {
     display: inline-block;
     border: 0.125rem solid black;
-    width: 6rem;
+    width: 7rem;
     margin: 0.6rem;
     padding: 0.6rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 nav {
@@ -28,15 +27,14 @@ nav {
     flex: 80%;
 }
 header a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-decoration: none;
     text-align: center;
     color:rgb(160, 160, 160);
     border: 0.125rem solid black;
     background-color: black;
     display: inline-block;
-    width: 6rem;
-    /*clear: left;*/
+    width: 7rem;
     margin: 0.6rem;
     padding: 0.6rem;
 }
@@ -48,8 +46,6 @@ header a:hover {
 footer {
     margin-top: 2rem;
     margin-bottom: 0.6rem;
-    position: fixed;
-    position: flex;
     bottom: 0;
     font-size: 0.7rem;
 }
@@ -82,27 +78,35 @@ h1 {
     font-size: 0.8rem;
 }
 @media screen and (min-width: 980px) /* Desktop */ {
+    nav {
+        position: relative;
+        bottom: 3.5rem;
+    }
     .textbox {
         width: 25%;
     }
+    footer {
+        position: fixed;
+    }
 }
-@media screen and (max-width: 979px) /* Tablet */ {
+@media screen and (max-width: 769px) /* Tablet */ {
     /*figure {
-        width: 8rem;
+        width: 7rem;
         font-size: 1rem;
     }*/
     nav {
         text-align: right;
+        position: relative;
+        bottom: 3.5rem;
     }
-    /*header a {
-        width: 8rem;
-        font-size: 1rem;
-    }*/
     .textbox {
         width: 50%;
     }
+    footer {
+        position: fixed;
+    }
 }
-@media screen and (max-width: 500px) /* Mobile */ {
+@media screen and (max-width: 361px) /* Mobile */ {
     header {
         flex-direction: column;
     }
@@ -115,12 +119,17 @@ h1 {
     }
     nav {
         text-align: center;
+        top: 0;
     }
-    /*header a {
+    header a {
         font-size: 0.7rem;
-        width: 6rem;
-    }*/
+        width: 3.5rem;
+    }
     .textbox {
         width: 75%;
+    }
+    footer {
+        display: none;
+        /*position:flex;*/
     }
 }

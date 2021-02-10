@@ -23,10 +23,10 @@ p {
     text-align: left;
     display: inline-block;
     padding: 0 0 0 3rem;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
     width: 40%;
 }
-@media screen and (max-width: 979px) /* Tablet */ {
+@media screen and (max-width: 769px) /* Tablet */ {
     section {
         flex-direction: column;
     }
@@ -41,7 +41,7 @@ p {
         width: 50%;
     }
 }
-@media screen and (max-width: 500px) /* Mobile */ {
+@media screen and (max-width: 361px) /* Mobile */ {
     p {
         width: 75%;
     }
