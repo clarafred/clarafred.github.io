@@ -98,6 +98,7 @@ h1 {
         text-align: right;
         position: relative;
         bottom: 3.552rem;
+        max-width: 80%;
     }
     .textbox {
         width: 50%;
